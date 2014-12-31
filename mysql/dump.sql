@@ -51,7 +51,7 @@ CREATE TABLE `craft_assetfiles` (
 
 LOCK TABLES `craft_assetfiles` WRITE;
 /*!40000 ALTER TABLE `craft_assetfiles` DISABLE KEYS */;
-INSERT INTO `craft_assetfiles` VALUES (6,1,1,'index-image.png','image',1600,1070,1382204,'2014-12-31 15:23:50','2014-12-31 15:24:30','2014-12-31 15:24:30','3e806a13-713c-4060-88e0-9ff366b3b3ea');
+INSERT INTO `craft_assetfiles` VALUES (6,1,1,'index-image.png','image',1600,1070,1382204,'2014-12-31 15:23:50','2014-12-31 15:24:30','2014-12-31 15:24:30','3e806a13-713c-4060-88e0-9ff366b3b3ea'),(9,1,1,'company.jpg','image',1500,1001,1105966,'2014-12-31 16:18:32','2014-12-31 16:18:32','2014-12-31 16:18:32','fa6c24a8-81ee-4601-8976-070ff2f337c7');
 /*!40000 ALTER TABLE `craft_assetfiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -360,7 +360,7 @@ CREATE TABLE `craft_content` (
   KEY `craft_content_locale_fk` (`locale`),
   CONSTRAINT `craft_content_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_content_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -369,7 +369,7 @@ CREATE TABLE `craft_content` (
 
 LOCK TABLES `craft_content` WRITE;
 /*!40000 ALTER TABLE `craft_content` DISABLE KEYS */;
-INSERT INTO `craft_content` VALUES (1,1,'de',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 14:08:16','94a46312-52ee-4ab0-b3a4-03da8d826a9c'),(2,2,'de','Homepage','<p>Es stimmt, diese Site hat noch nicht viel an Inhalt zu bieten. Aber keine Sorge, unsere Webentwickler haben das CMS soeben installiert und gerade in diesem Moment bereiten sie die Inhalte vor. Schon ganz bald ist Craft.dev eine Quelle neuer Perspektiven, klarer Analysen und scharfsinniger Meinungen, ein Ort, an den Sie wieder und wieder zurückkehren werden.<br></p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 15:28:18','842adbc6-e22b-43d9-83cd-50556d0d2008'),(3,3,'de','Wir haben soeben Craft installiert!','<p>Benjas sind Dumm...</p><p>Craft ist das CMS (Content-Managment-System), auf dem Craft.dev basiert. Es ist eindrucksvoll, leistungsstark, flexibel, benutzerfreundlich und wird von Pixel &amp; Tonic entwickelt. Wir können es kaum erwarten loszulegen und herauszufinden, was es alles kann!</p><!--pagebreak--><p>Dies ist ein noch besserer Inhalt, welchen Sie auf der Nachrichten-Übersichtsseite nicht sehen konnten, da er nach einem Seitenumbruch eingefügt worden ist. Das Template für die Nachrichten-Übersicht zeigt normalerweise nur den Inhalt der ersten Seite an.</p><p>Craft: Eine schöne Alternative zu Word, wenn Sie eine Webseite erstellen.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:17','2014-12-31 14:13:16','ff84af67-1986-4b9c-afcb-0bc190fd6faa'),(4,4,'de',NULL,'<p>http://1d0be.github.io/shp-holz</p>','http://1d0be.github.io/shp-holz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:49:48','2014-12-31 16:03:54','40c4de0b-ccc2-4dd7-960a-48f5fca008fd'),(5,5,'de',NULL,'<p>holz gmbh</p>','holz gmbh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:04:51','2014-12-31 15:13:27','99fbb02c-1e2b-4f6c-bbc5-9a928f74b4d4'),(6,6,'de','index-image',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:24:30','2014-12-31 15:24:30','711fbfa6-0f56-486e-bf3f-84f192c934b5'),(8,7,'de',NULL,NULL,NULL,'Andritzer Reichsstraße 162','Graz','8046','Austria','shp holz gmbh','DI Gerhard Pipp','+43 31 66 93 38 90','ATU 55070602','2014-12-31 15:44:38','2014-12-31 15:55:56','7aa41840-f027-4bd0-b9e7-eb41645551af');
+INSERT INTO `craft_content` VALUES (1,1,'de',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 14:08:16','94a46312-52ee-4ab0-b3a4-03da8d826a9c'),(2,2,'de','Homepage','<p>Es stimmt, diese Site hat noch nicht viel an Inhalt zu bieten. Aber keine Sorge, unsere Webentwickler haben das CMS soeben installiert und gerade in diesem Moment bereiten sie die Inhalte vor. Schon ganz bald ist Craft.dev eine Quelle neuer Perspektiven, klarer Analysen und scharfsinniger Meinungen, ein Ort, an den Sie wieder und wieder zurückkehren werden.<br></p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 16:12:32','842adbc6-e22b-43d9-83cd-50556d0d2008'),(3,3,'de','Wir haben soeben Craft installiert!','<p>Benjas sind Dumm...</p><p>Craft ist das CMS (Content-Managment-System), auf dem Craft.dev basiert. Es ist eindrucksvoll, leistungsstark, flexibel, benutzerfreundlich und wird von Pixel &amp; Tonic entwickelt. Wir können es kaum erwarten loszulegen und herauszufinden, was es alles kann!</p><!--pagebreak--><p>Dies ist ein noch besserer Inhalt, welchen Sie auf der Nachrichten-Übersichtsseite nicht sehen konnten, da er nach einem Seitenumbruch eingefügt worden ist. Das Template für die Nachrichten-Übersicht zeigt normalerweise nur den Inhalt der ersten Seite an.</p><p>Craft: Eine schöne Alternative zu Word, wenn Sie eine Webseite erstellen.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:17','2014-12-31 14:13:16','ff84af67-1986-4b9c-afcb-0bc190fd6faa'),(4,4,'de',NULL,'<p>http://1d0be.github.io/shp-holz</p>','http://1d0be.github.io/shp-holz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:49:48','2014-12-31 16:03:54','40c4de0b-ccc2-4dd7-960a-48f5fca008fd'),(5,5,'de',NULL,'<p>holz gmbh</p>','holz gmbh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:04:51','2014-12-31 15:13:27','99fbb02c-1e2b-4f6c-bbc5-9a928f74b4d4'),(6,6,'de','index-image',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:24:30','2014-12-31 15:24:30','711fbfa6-0f56-486e-bf3f-84f192c934b5'),(8,7,'de',NULL,NULL,NULL,'Andritzer Reichsstraße 162','Graz','8046','Austria','shp holz gmbh','DI Gerhard Pipp','+43 31 66 93 38 90','ATU 55070602','2014-12-31 15:44:38','2014-12-31 15:55:56','7aa41840-f027-4bd0-b9e7-eb41645551af'),(9,8,'de','Unternehmen','<p>Die Vorgängerfirma die hwp holzverarbeitungs- gmbh wurde im Jahre 20… von drei Gesellschaftern gegründet nach Ausscheiden eines Gesellschafters im Jahre 20… bestand diese bis 20…</p><p>Nach … jähriger Tätigkeit dieser Firma erfolgte eine Abspaltung der Gesellschaft, wobei die Stammfirma verkleinert erhalten blieb und vom derzeitigen Gesellschafter Gerhard Pipp unter dem Namen shp holz gmbh bis heute weiter geführt wird.</p><p>Im Jahre 20…. entstand ein Schwesterunternehmen, die shp drewno in Polen.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 16:11:41','2014-12-31 16:19:03','d82b257b-5511-41b2-9ce8-a9c1b222b5b6'),(15,9,'de','company',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 16:18:32','2014-12-31 16:18:32','badf6cdb-b990-429f-9753-7c464dfb6f18');
 /*!40000 ALTER TABLE `craft_content` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -429,7 +429,7 @@ CREATE TABLE `craft_elements` (
   KEY `craft_elements_type_idx` (`type`),
   KEY `craft_elements_enabled_idx` (`enabled`),
   KEY `craft_elements_archived_dateCreated_idx` (`archived`,`dateCreated`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -438,7 +438,7 @@ CREATE TABLE `craft_elements` (
 
 LOCK TABLES `craft_elements` WRITE;
 /*!40000 ALTER TABLE `craft_elements` DISABLE KEYS */;
-INSERT INTO `craft_elements` VALUES (1,'User',1,0,'2014-12-31 14:08:16','2014-12-31 14:08:16','f4404892-6a63-4078-88d8-bf8b136e7b50'),(2,'Entry',1,0,'2014-12-31 14:08:16','2014-12-31 15:28:18','d1446015-0b47-4c15-8dbc-9157b7649f22'),(3,'Entry',1,0,'2014-12-31 14:08:17','2014-12-31 14:13:16','301d74ee-7f20-4546-8a82-64bf0a8260e0'),(4,'GlobalSet',1,0,'2014-12-31 14:49:48','2014-12-31 16:03:54','f66ea431-9cfd-40c5-a9d2-0fa1b9a3461e'),(5,'GlobalSet',1,0,'2014-12-31 15:04:51','2014-12-31 15:13:27','8ac80665-1570-45ff-8fdf-21cdbee5fade'),(6,'Asset',1,0,'2014-12-31 15:24:30','2014-12-31 15:24:30','d58375b5-7c3c-4b28-b90e-81f13b7b299a'),(7,'GlobalSet',1,0,'2014-12-31 15:44:38','2014-12-31 15:55:56','eb29bffb-2859-46fb-bbd1-0f5fd49a49d4');
+INSERT INTO `craft_elements` VALUES (1,'User',1,0,'2014-12-31 14:08:16','2014-12-31 14:08:16','f4404892-6a63-4078-88d8-bf8b136e7b50'),(2,'Entry',1,0,'2014-12-31 14:08:16','2014-12-31 16:12:32','d1446015-0b47-4c15-8dbc-9157b7649f22'),(3,'Entry',1,0,'2014-12-31 14:08:17','2014-12-31 14:13:16','301d74ee-7f20-4546-8a82-64bf0a8260e0'),(4,'GlobalSet',1,0,'2014-12-31 14:49:48','2014-12-31 16:03:54','f66ea431-9cfd-40c5-a9d2-0fa1b9a3461e'),(5,'GlobalSet',1,0,'2014-12-31 15:04:51','2014-12-31 15:13:27','8ac80665-1570-45ff-8fdf-21cdbee5fade'),(6,'Asset',1,0,'2014-12-31 15:24:30','2014-12-31 15:24:30','d58375b5-7c3c-4b28-b90e-81f13b7b299a'),(7,'GlobalSet',1,0,'2014-12-31 15:44:38','2014-12-31 15:55:56','eb29bffb-2859-46fb-bbd1-0f5fd49a49d4'),(8,'Entry',1,0,'2014-12-31 16:11:41','2014-12-31 16:19:03','9859d581-7c15-4d38-82ea-9b8657a1a762'),(9,'Asset',1,0,'2014-12-31 16:18:32','2014-12-31 16:18:32','da657c51-69b9-4173-aa87-1181037ba0e1');
 /*!40000 ALTER TABLE `craft_elements` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -467,7 +467,7 @@ CREATE TABLE `craft_elements_i18n` (
   KEY `craft_elements_i18n_locale_fk` (`locale`),
   CONSTRAINT `craft_elements_i18n_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_elements_i18n_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -476,7 +476,7 @@ CREATE TABLE `craft_elements_i18n` (
 
 LOCK TABLES `craft_elements_i18n` WRITE;
 /*!40000 ALTER TABLE `craft_elements_i18n` DISABLE KEYS */;
-INSERT INTO `craft_elements_i18n` VALUES (1,1,'de','',NULL,1,'2014-12-31 14:08:16','2014-12-31 14:08:16','a7d269aa-769e-4195-ba97-cf88b741dfe4'),(2,2,'de','homepage','__home__',1,'2014-12-31 14:08:16','2014-12-31 15:28:18','f84031ec-4331-4752-a7aa-4d196b53b826'),(3,3,'de','wir-haben-soeben-craft-installiert','news/2014/wir-haben-soeben-craft-installiert',1,'2014-12-31 14:08:17','2014-12-31 14:13:16','487530e9-4193-4cc2-aff7-69e5041ad841'),(4,4,'de','',NULL,1,'2014-12-31 14:49:48','2014-12-31 16:03:54','c7b19a2a-c386-43ea-8dd4-26c985d48619'),(5,5,'de','',NULL,1,'2014-12-31 15:04:51','2014-12-31 15:13:27','8b5b9c31-0ad1-4745-a7c7-42ed448cc8d8'),(6,6,'de','index-image',NULL,1,'2014-12-31 15:24:30','2014-12-31 15:24:30','268c7666-22a1-4856-b2b2-f0844c5ed578'),(8,7,'de','',NULL,1,'2014-12-31 15:44:38','2014-12-31 15:55:56','488c4b27-243e-4129-aa7a-b28b200804ff');
+INSERT INTO `craft_elements_i18n` VALUES (1,1,'de','',NULL,1,'2014-12-31 14:08:16','2014-12-31 14:08:16','a7d269aa-769e-4195-ba97-cf88b741dfe4'),(2,2,'de','homepage','__home__',1,'2014-12-31 14:08:16','2014-12-31 16:12:32','f84031ec-4331-4752-a7aa-4d196b53b826'),(3,3,'de','wir-haben-soeben-craft-installiert','news/2014/wir-haben-soeben-craft-installiert',1,'2014-12-31 14:08:17','2014-12-31 14:13:16','487530e9-4193-4cc2-aff7-69e5041ad841'),(4,4,'de','',NULL,1,'2014-12-31 14:49:48','2014-12-31 16:03:54','c7b19a2a-c386-43ea-8dd4-26c985d48619'),(5,5,'de','',NULL,1,'2014-12-31 15:04:51','2014-12-31 15:13:27','8b5b9c31-0ad1-4745-a7c7-42ed448cc8d8'),(6,6,'de','index-image',NULL,1,'2014-12-31 15:24:30','2014-12-31 15:24:30','268c7666-22a1-4856-b2b2-f0844c5ed578'),(8,7,'de','',NULL,1,'2014-12-31 15:44:38','2014-12-31 15:55:56','488c4b27-243e-4129-aa7a-b28b200804ff'),(9,8,'de','unternehmen','unternehmen',1,'2014-12-31 16:11:41','2014-12-31 16:19:03','58702f73-b9f2-4331-a024-2e60a122ba71'),(15,9,'de','company',NULL,1,'2014-12-31 16:18:32','2014-12-31 16:18:32','08a8e394-6db4-43e0-b018-b2354db61856');
 /*!40000 ALTER TABLE `craft_elements_i18n` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -548,7 +548,7 @@ CREATE TABLE `craft_entries` (
 
 LOCK TABLES `craft_entries` WRITE;
 /*!40000 ALTER TABLE `craft_entries` DISABLE KEYS */;
-INSERT INTO `craft_entries` VALUES (2,1,1,NULL,'2014-12-31 15:26:10',NULL,'2014-12-31 14:08:16','2014-12-31 15:28:18','1d09a30f-0ed6-4223-a37e-b47e284db4fb'),(3,2,2,1,'2014-12-31 14:08:00',NULL,'2014-12-31 14:08:17','2014-12-31 14:13:16','4057b671-9f93-45c5-a7de-8bf5cb06252d');
+INSERT INTO `craft_entries` VALUES (2,1,1,NULL,'2014-12-31 16:12:31',NULL,'2014-12-31 14:08:16','2014-12-31 16:12:31','1d09a30f-0ed6-4223-a37e-b47e284db4fb'),(3,2,2,1,'2014-12-31 14:08:00',NULL,'2014-12-31 14:08:17','2014-12-31 14:13:16','4057b671-9f93-45c5-a7de-8bf5cb06252d'),(8,3,3,NULL,'2014-12-31 16:12:46',NULL,'2014-12-31 16:11:41','2014-12-31 16:19:03','ce8e7073-4917-417a-8b33-21ec4d0c5491');
 /*!40000 ALTER TABLE `craft_entries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -619,7 +619,7 @@ CREATE TABLE `craft_entrytypes` (
   KEY `craft_entrytypes_fieldLayoutId_fk` (`fieldLayoutId`),
   CONSTRAINT `craft_entrytypes_fieldLayoutId_fk` FOREIGN KEY (`fieldLayoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE SET NULL,
   CONSTRAINT `craft_entrytypes_sectionId_fk` FOREIGN KEY (`sectionId`) REFERENCES `craft_sections` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -628,7 +628,7 @@ CREATE TABLE `craft_entrytypes` (
 
 LOCK TABLES `craft_entrytypes` WRITE;
 /*!40000 ALTER TABLE `craft_entrytypes` DISABLE KEYS */;
-INSERT INTO `craft_entrytypes` VALUES (1,1,16,'Homepage','homepage',1,'Titel',NULL,NULL,'2014-12-31 14:08:16','2014-12-31 15:27:20','88fcb01d-0452-404b-a87e-42c745e3672a'),(2,2,5,'Neuigkeiten','news',1,'Titel',NULL,NULL,'2014-12-31 14:08:17','2014-12-31 14:08:17','53011672-0dca-45f3-8afb-cadfb2f41b1e');
+INSERT INTO `craft_entrytypes` VALUES (1,1,24,'Homepage','homepage',1,'Titel',NULL,NULL,'2014-12-31 14:08:16','2014-12-31 16:13:29','88fcb01d-0452-404b-a87e-42c745e3672a'),(2,2,5,'Neuigkeiten','news',1,'Titel',NULL,NULL,'2014-12-31 14:08:17','2014-12-31 14:08:17','53011672-0dca-45f3-8afb-cadfb2f41b1e'),(3,3,25,'unternehmen','unternehmen',0,NULL,'{section.name|raw}',NULL,'2014-12-31 16:11:41','2014-12-31 16:13:40','b5652ffc-9e32-484c-b5ab-8203629fab7d');
 /*!40000 ALTER TABLE `craft_entrytypes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -725,7 +725,7 @@ CREATE TABLE `craft_fieldlayoutfields` (
   CONSTRAINT `craft_fieldlayoutfields_fieldId_fk` FOREIGN KEY (`fieldId`) REFERENCES `craft_fields` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_fieldlayoutfields_layoutId_fk` FOREIGN KEY (`layoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_fieldlayoutfields_tabId_fk` FOREIGN KEY (`tabId`) REFERENCES `craft_fieldlayouttabs` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -734,7 +734,7 @@ CREATE TABLE `craft_fieldlayoutfields` (
 
 LOCK TABLES `craft_fieldlayoutfields` WRITE;
 /*!40000 ALTER TABLE `craft_fieldlayoutfields` DISABLE KEYS */;
-INSERT INTO `craft_fieldlayoutfields` VALUES (2,5,2,1,1,1,'2014-12-31 14:08:17','2014-12-31 14:08:17','1a86a507-04d8-4cd1-aa07-a1ed971607c9'),(3,5,2,2,0,2,'2014-12-31 14:08:17','2014-12-31 14:08:17','4079befa-4af1-41d6-9d15-74b376e8d3eb'),(7,10,6,3,0,1,'2014-12-31 14:59:41','2014-12-31 14:59:41','e56128cd-44a2-4bc2-aa40-87053d4cf0e8'),(9,12,8,3,0,1,'2014-12-31 15:13:06','2014-12-31 15:13:06','beb28946-6822-41f7-9433-378c91a925b5'),(11,16,10,1,1,1,'2014-12-31 15:27:20','2014-12-31 15:27:20','3ec62a57-cdde-4de8-a507-a2c0ac2f2278'),(12,16,10,4,1,2,'2014-12-31 15:27:20','2014-12-31 15:27:20','641fe993-8241-4632-85f7-dc7cf3edbd7f'),(30,20,13,9,0,1,'2014-12-31 15:55:45','2014-12-31 15:55:45','5c826e6c-2260-4073-835e-f0103975d8bb'),(31,20,13,10,0,2,'2014-12-31 15:55:45','2014-12-31 15:55:45','5165db47-0a69-4379-af95-907154ea64aa'),(32,20,13,11,0,3,'2014-12-31 15:55:45','2014-12-31 15:55:45','2794299c-01c0-4e0c-8c31-bda08a69d016'),(33,20,13,12,0,4,'2014-12-31 15:55:45','2014-12-31 15:55:45','e542c99e-692c-4bd4-aab0-ded4f2b86db6'),(34,20,13,8,0,5,'2014-12-31 15:55:45','2014-12-31 15:55:45','f00187b3-4a1a-4d9a-a141-76b611834f39'),(35,20,13,7,0,6,'2014-12-31 15:55:45','2014-12-31 15:55:45','b8c7f90c-c807-4257-9a78-43f58b8a1fb0'),(36,20,13,6,0,7,'2014-12-31 15:55:45','2014-12-31 15:55:45','eee41905-8279-4bcf-aa2c-010177ce049d'),(37,20,13,5,0,8,'2014-12-31 15:55:45','2014-12-31 15:55:45','974f1fc9-f341-4e10-9463-2bb9715dcf6b');
+INSERT INTO `craft_fieldlayoutfields` VALUES (2,5,2,1,1,1,'2014-12-31 14:08:17','2014-12-31 14:08:17','1a86a507-04d8-4cd1-aa07-a1ed971607c9'),(3,5,2,2,0,2,'2014-12-31 14:08:17','2014-12-31 14:08:17','4079befa-4af1-41d6-9d15-74b376e8d3eb'),(7,10,6,3,0,1,'2014-12-31 14:59:41','2014-12-31 14:59:41','e56128cd-44a2-4bc2-aa40-87053d4cf0e8'),(9,12,8,3,0,1,'2014-12-31 15:13:06','2014-12-31 15:13:06','beb28946-6822-41f7-9433-378c91a925b5'),(30,20,13,9,0,1,'2014-12-31 15:55:45','2014-12-31 15:55:45','5c826e6c-2260-4073-835e-f0103975d8bb'),(31,20,13,10,0,2,'2014-12-31 15:55:45','2014-12-31 15:55:45','5165db47-0a69-4379-af95-907154ea64aa'),(32,20,13,11,0,3,'2014-12-31 15:55:45','2014-12-31 15:55:45','2794299c-01c0-4e0c-8c31-bda08a69d016'),(33,20,13,12,0,4,'2014-12-31 15:55:45','2014-12-31 15:55:45','e542c99e-692c-4bd4-aab0-ded4f2b86db6'),(34,20,13,8,0,5,'2014-12-31 15:55:45','2014-12-31 15:55:45','f00187b3-4a1a-4d9a-a141-76b611834f39'),(35,20,13,7,0,6,'2014-12-31 15:55:45','2014-12-31 15:55:45','b8c7f90c-c807-4257-9a78-43f58b8a1fb0'),(36,20,13,6,0,7,'2014-12-31 15:55:45','2014-12-31 15:55:45','eee41905-8279-4bcf-aa2c-010177ce049d'),(37,20,13,5,0,8,'2014-12-31 15:55:45','2014-12-31 15:55:45','974f1fc9-f341-4e10-9463-2bb9715dcf6b'),(42,24,16,1,1,1,'2014-12-31 16:13:29','2014-12-31 16:13:29','eb45710f-9dad-49bd-aa12-a0dd4f61df8d'),(43,24,16,4,1,2,'2014-12-31 16:13:29','2014-12-31 16:13:29','bc014cdd-ed93-4fe6-bf73-8dd483257f95'),(44,25,17,4,1,1,'2014-12-31 16:13:40','2014-12-31 16:13:40','635b2331-88a2-48b4-8e13-6f1d5ef5e424'),(45,25,17,1,1,2,'2014-12-31 16:13:40','2014-12-31 16:13:40','5ca79fe4-6915-4aea-8e56-98bf538d2ec5');
 /*!40000 ALTER TABLE `craft_fieldlayoutfields` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -753,7 +753,7 @@ CREATE TABLE `craft_fieldlayouts` (
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `craft_fieldlayouts_type_idx` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -762,7 +762,7 @@ CREATE TABLE `craft_fieldlayouts` (
 
 LOCK TABLES `craft_fieldlayouts` WRITE;
 /*!40000 ALTER TABLE `craft_fieldlayouts` DISABLE KEYS */;
-INSERT INTO `craft_fieldlayouts` VALUES (1,'Tag','2014-12-31 14:08:16','2014-12-31 14:08:16','85d43867-861c-4328-bcc1-4083fbed7b7a'),(5,'Entry','2014-12-31 14:08:17','2014-12-31 14:08:17','968ef92e-35b2-4ab6-9110-ee26276b8f90'),(10,'GlobalSet','2014-12-31 14:59:41','2014-12-31 14:59:41','c859ea33-931c-4a53-9610-38becc13d163'),(12,'GlobalSet','2014-12-31 15:13:06','2014-12-31 15:13:06','02f22516-1b9d-40cf-b1bc-b07a0f883222'),(14,'Asset','2014-12-31 15:22:53','2014-12-31 15:22:53','6bf62682-a7a7-4cd4-aaac-db4d9307315f'),(16,'Entry','2014-12-31 15:27:20','2014-12-31 15:27:20','1e4e3372-4b43-4ab3-9a0c-3087d9bc129e'),(20,'GlobalSet','2014-12-31 15:55:45','2014-12-31 15:55:45','c40dde7f-344b-4938-8923-54167fe2b520');
+INSERT INTO `craft_fieldlayouts` VALUES (1,'Tag','2014-12-31 14:08:16','2014-12-31 14:08:16','85d43867-861c-4328-bcc1-4083fbed7b7a'),(5,'Entry','2014-12-31 14:08:17','2014-12-31 14:08:17','968ef92e-35b2-4ab6-9110-ee26276b8f90'),(10,'GlobalSet','2014-12-31 14:59:41','2014-12-31 14:59:41','c859ea33-931c-4a53-9610-38becc13d163'),(12,'GlobalSet','2014-12-31 15:13:06','2014-12-31 15:13:06','02f22516-1b9d-40cf-b1bc-b07a0f883222'),(14,'Asset','2014-12-31 15:22:53','2014-12-31 15:22:53','6bf62682-a7a7-4cd4-aaac-db4d9307315f'),(20,'GlobalSet','2014-12-31 15:55:45','2014-12-31 15:55:45','c40dde7f-344b-4938-8923-54167fe2b520'),(24,'Entry','2014-12-31 16:13:29','2014-12-31 16:13:29','347c6e29-84d1-4a6f-8192-55c3605472fe'),(25,'Entry','2014-12-31 16:13:40','2014-12-31 16:13:40','512946f1-90dd-442f-93c4-06585b485fe7');
 /*!40000 ALTER TABLE `craft_fieldlayouts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -785,7 +785,7 @@ CREATE TABLE `craft_fieldlayouttabs` (
   KEY `craft_fieldlayouttabs_sortOrder_idx` (`sortOrder`),
   KEY `craft_fieldlayouttabs_layoutId_fk` (`layoutId`),
   CONSTRAINT `craft_fieldlayouttabs_layoutId_fk` FOREIGN KEY (`layoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -794,7 +794,7 @@ CREATE TABLE `craft_fieldlayouttabs` (
 
 LOCK TABLES `craft_fieldlayouttabs` WRITE;
 /*!40000 ALTER TABLE `craft_fieldlayouttabs` DISABLE KEYS */;
-INSERT INTO `craft_fieldlayouttabs` VALUES (2,5,'Inhalt',1,'2014-12-31 14:08:17','2014-12-31 14:08:17','5a872e04-a204-443a-9546-a097dfbff17d'),(6,10,'Inhalt',1,'2014-12-31 14:59:41','2014-12-31 14:59:41','6d62d17f-9965-4f20-97ab-eb97ad33ba1d'),(8,12,'Inhalt',1,'2014-12-31 15:13:06','2014-12-31 15:13:06','272e67fc-5f0e-481a-b72d-ccb076a77668'),(10,16,'Inhalt',1,'2014-12-31 15:27:20','2014-12-31 15:27:20','e207e0ab-70ef-48ea-af81-0a016b7b230f'),(13,20,'Inhalt',1,'2014-12-31 15:55:45','2014-12-31 15:55:45','2978b51c-7b45-4db2-9959-b758a77e2121');
+INSERT INTO `craft_fieldlayouttabs` VALUES (2,5,'Inhalt',1,'2014-12-31 14:08:17','2014-12-31 14:08:17','5a872e04-a204-443a-9546-a097dfbff17d'),(6,10,'Inhalt',1,'2014-12-31 14:59:41','2014-12-31 14:59:41','6d62d17f-9965-4f20-97ab-eb97ad33ba1d'),(8,12,'Inhalt',1,'2014-12-31 15:13:06','2014-12-31 15:13:06','272e67fc-5f0e-481a-b72d-ccb076a77668'),(13,20,'Inhalt',1,'2014-12-31 15:55:45','2014-12-31 15:55:45','2978b51c-7b45-4db2-9959-b758a77e2121'),(16,24,'Inhalt',1,'2014-12-31 16:13:29','2014-12-31 16:13:29','95a61c3f-4b63-4656-94c8-ccfac3b5f37e'),(17,25,'Inhalt',1,'2014-12-31 16:13:40','2014-12-31 16:13:40','5e559754-464a-482e-973c-2d6cb41f98cd');
 /*!40000 ALTER TABLE `craft_fieldlayouttabs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1129,7 +1129,7 @@ CREATE TABLE `craft_relations` (
   CONSTRAINT `craft_relations_sourceId_fk` FOREIGN KEY (`sourceId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_relations_sourceLocale_fk` FOREIGN KEY (`sourceLocale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `craft_relations_targetId_fk` FOREIGN KEY (`targetId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1138,7 +1138,7 @@ CREATE TABLE `craft_relations` (
 
 LOCK TABLES `craft_relations` WRITE;
 /*!40000 ALTER TABLE `craft_relations` DISABLE KEYS */;
-INSERT INTO `craft_relations` VALUES (1,4,2,NULL,6,1,'2014-12-31 15:28:18','2014-12-31 15:28:18','0c8c14d9-0d57-4f7c-8897-369b5994a5e1');
+INSERT INTO `craft_relations` VALUES (1,4,2,NULL,6,1,'2014-12-31 15:28:18','2014-12-31 15:28:18','0c8c14d9-0d57-4f7c-8897-369b5994a5e1'),(2,4,8,NULL,9,1,'2014-12-31 16:19:03','2014-12-31 16:19:03','8d112117-cbe8-4be2-b5e1-5b2ac9bdf2d2');
 /*!40000 ALTER TABLE `craft_relations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1199,7 +1199,7 @@ CREATE TABLE `craft_searchindex` (
 
 LOCK TABLES `craft_searchindex` WRITE;
 /*!40000 ALTER TABLE `craft_searchindex` DISABLE KEYS */;
-INSERT INTO `craft_searchindex` VALUES (1,'username',0,'de',' admin '),(1,'firstname',0,'de',''),(1,'lastname',0,'de',''),(1,'fullname',0,'de',''),(1,'email',0,'de',' christoph minixhofer gmail com '),(1,'slug',0,'de',''),(2,'field',1,'de',' es stimmt diese site hat noch nicht viel an inhalt zu bieten aber keine sorge unsere webentwickler haben das cms soeben installiert und gerade in diesem moment bereiten sie die inhalte vor schon ganz bald ist craft dev eine quelle neuer perspektiven klarer analysen und scharfsinniger meinungen ein ort an den sie wieder und wieder zurueckkehren werden '),(2,'slug',0,'de',' homepage '),(2,'title',0,'de',' homepage '),(3,'field',1,'de',' benjas sind dumm craft ist das cms content managment system auf dem craft dev basiert es ist eindrucksvoll leistungsstark flexibel benutzerfreundlich und wird von pixel tonic entwickelt wir koennen es kaum erwarten loszulegen und herauszufinden was es alles kann dies ist ein noch besserer inhalt welchen sie auf der nachrichten übersichtsseite nicht sehen konnten da er nach einem seitenumbruch eingefuegt worden ist das template fuer die nachrichten übersicht zeigt normalerweise nur den inhalt der ersten seite an craft eine schoene alternative zu word wenn sie eine webseite erstellen '),(3,'field',2,'de',''),(3,'slug',0,'de',' wir haben soeben craft installiert '),(3,'title',0,'de',' wir haben soeben craft installiert '),(4,'slug',0,'de',''),(4,'field',1,'de',' http 1d0be github io shp holz '),(4,'field',3,'de',' http 1d0be github io shp holz '),(5,'field',1,'de',' holz gmbh '),(5,'slug',0,'de',''),(5,'field',3,'de',' holz gmbh '),(6,'filename',0,'de',' index image png '),(6,'extension',0,'de',' png '),(6,'kind',0,'de',' image '),(6,'slug',0,'de',''),(6,'title',0,'de',' index image '),(2,'field',4,'de',' index image '),(7,'slug',0,'de',''),(7,'field',9,'de',' shp holz gmbh '),(7,'field',10,'de',' di gerhard pipp '),(7,'field',11,'de',' 43 31 66 93 38 90 '),(7,'field',12,'de',' atu 55070602 '),(7,'field',8,'de',' austria '),(7,'field',7,'de',' 8046 '),(7,'field',6,'de',' graz '),(7,'field',5,'de',' andritzer reichsstrasse 162 '),(7,'field',13,'de',' pipp ');
+INSERT INTO `craft_searchindex` VALUES (1,'username',0,'de',' admin '),(1,'firstname',0,'de',''),(1,'lastname',0,'de',''),(1,'fullname',0,'de',''),(1,'email',0,'de',' christoph minixhofer gmail com '),(1,'slug',0,'de',''),(2,'field',1,'de',' es stimmt diese site hat noch nicht viel an inhalt zu bieten aber keine sorge unsere webentwickler haben das cms soeben installiert und gerade in diesem moment bereiten sie die inhalte vor schon ganz bald ist craft dev eine quelle neuer perspektiven klarer analysen und scharfsinniger meinungen ein ort an den sie wieder und wieder zurueckkehren werden '),(2,'slug',0,'de',' homepage '),(2,'title',0,'de',' homepage '),(3,'field',1,'de',' benjas sind dumm craft ist das cms content managment system auf dem craft dev basiert es ist eindrucksvoll leistungsstark flexibel benutzerfreundlich und wird von pixel tonic entwickelt wir koennen es kaum erwarten loszulegen und herauszufinden was es alles kann dies ist ein noch besserer inhalt welchen sie auf der nachrichten übersichtsseite nicht sehen konnten da er nach einem seitenumbruch eingefuegt worden ist das template fuer die nachrichten übersicht zeigt normalerweise nur den inhalt der ersten seite an craft eine schoene alternative zu word wenn sie eine webseite erstellen '),(3,'field',2,'de',''),(3,'slug',0,'de',' wir haben soeben craft installiert '),(3,'title',0,'de',' wir haben soeben craft installiert '),(4,'slug',0,'de',''),(4,'field',1,'de',' http 1d0be github io shp holz '),(4,'field',3,'de',' http 1d0be github io shp holz '),(5,'field',1,'de',' holz gmbh '),(5,'slug',0,'de',''),(5,'field',3,'de',' holz gmbh '),(6,'filename',0,'de',' index image png '),(6,'extension',0,'de',' png '),(6,'kind',0,'de',' image '),(6,'slug',0,'de',''),(6,'title',0,'de',' index image '),(2,'field',4,'de',' index image '),(7,'slug',0,'de',''),(7,'field',9,'de',' shp holz gmbh '),(7,'field',10,'de',' di gerhard pipp '),(7,'field',11,'de',' 43 31 66 93 38 90 '),(7,'field',12,'de',' atu 55070602 '),(7,'field',8,'de',' austria '),(7,'field',7,'de',' 8046 '),(7,'field',6,'de',' graz '),(7,'field',5,'de',' andritzer reichsstrasse 162 '),(7,'field',13,'de',' pipp '),(8,'slug',0,'de',' unternehmen '),(8,'title',0,'de',' unternehmen '),(9,'filename',0,'de',' company jpg '),(9,'extension',0,'de',' jpg '),(9,'kind',0,'de',' image '),(9,'slug',0,'de',''),(9,'title',0,'de',' company '),(8,'field',4,'de',' company '),(8,'field',1,'de',' die vorgaengerfirma die hwp holzverarbeitungs gmbh wurde im jahre 20 von drei gesellschaftern gegruendet nach ausscheiden eines gesellschafters im jahre 20 bestand diese bis 20 nach jaehriger taetigkeit dieser firma erfolgte eine abspaltung der gesellschaft wobei die stammfirma verkleinert erhalten blieb und vom derzeitigen gesellschafter gerhard pipp unter dem namen shp holz gmbh bis heute weiter gefuehrt wird im jahre 20 entstand ein schwesterunternehmen die shp drewno in polen ');
 /*!40000 ALTER TABLE `craft_searchindex` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1227,7 +1227,7 @@ CREATE TABLE `craft_sections` (
   UNIQUE KEY `craft_sections_handle_unq_idx` (`handle`),
   KEY `craft_sections_structureId_fk` (`structureId`),
   CONSTRAINT `craft_sections_structureId_fk` FOREIGN KEY (`structureId`) REFERENCES `craft_structures` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1236,7 +1236,7 @@ CREATE TABLE `craft_sections` (
 
 LOCK TABLES `craft_sections` WRITE;
 /*!40000 ALTER TABLE `craft_sections` DISABLE KEYS */;
-INSERT INTO `craft_sections` VALUES (1,NULL,'Homepage','homepage','single',1,'index',1,'2014-12-31 14:08:16','2014-12-31 15:26:10','9c8b62ae-d652-4363-b933-a6d65c30eeed'),(2,NULL,'Neuigkeiten','news','channel',1,'news/_entry',1,'2014-12-31 14:08:17','2014-12-31 14:08:17','2a7632ee-4d34-4e15-aad0-15d6c4b7ce9e');
+INSERT INTO `craft_sections` VALUES (1,NULL,'Homepage','homepage','single',1,'index',1,'2014-12-31 14:08:16','2014-12-31 16:12:31','9c8b62ae-d652-4363-b933-a6d65c30eeed'),(2,NULL,'Neuigkeiten','news','channel',1,'news/_entry',1,'2014-12-31 14:08:17','2014-12-31 14:08:17','2a7632ee-4d34-4e15-aad0-15d6c4b7ce9e'),(3,NULL,'Unternehmen','unternehmen','single',1,'index',1,'2014-12-31 16:11:41','2014-12-31 16:12:46','2c726bb6-5f8e-441a-a984-f1e921896ad6');
 /*!40000 ALTER TABLE `craft_sections` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1262,7 +1262,7 @@ CREATE TABLE `craft_sections_i18n` (
   KEY `craft_sections_i18n_locale_fk` (`locale`),
   CONSTRAINT `craft_sections_i18n_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `craft_sections_i18n_sectionId_fk` FOREIGN KEY (`sectionId`) REFERENCES `craft_sections` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1271,7 +1271,7 @@ CREATE TABLE `craft_sections_i18n` (
 
 LOCK TABLES `craft_sections_i18n` WRITE;
 /*!40000 ALTER TABLE `craft_sections_i18n` DISABLE KEYS */;
-INSERT INTO `craft_sections_i18n` VALUES (1,1,'de',0,'__home__',NULL,'2014-12-31 14:08:16','2014-12-31 15:26:10','c096b67f-dcf8-4f6e-b08f-53d997e56baf'),(2,2,'de',1,'news/{postDate.year}/{slug}',NULL,'2014-12-31 14:08:17','2014-12-31 14:08:17','ff0ab4da-b613-4869-ba1f-ae5d6c24879f');
+INSERT INTO `craft_sections_i18n` VALUES (1,1,'de',0,'__home__',NULL,'2014-12-31 14:08:16','2014-12-31 15:26:10','c096b67f-dcf8-4f6e-b08f-53d997e56baf'),(2,2,'de',1,'news/{postDate.year}/{slug}',NULL,'2014-12-31 14:08:17','2014-12-31 14:08:17','ff0ab4da-b613-4869-ba1f-ae5d6c24879f'),(3,3,'de',0,'unternehmen',NULL,'2014-12-31 16:11:41','2014-12-31 16:11:41','ac8e2ba5-bb57-465c-904f-206f78d258e2');
 /*!40000 ALTER TABLE `craft_sections_i18n` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1521,7 +1521,7 @@ CREATE TABLE `craft_tasks` (
   KEY `craft_tasks_lft_idx` (`lft`),
   KEY `craft_tasks_rgt_idx` (`rgt`),
   KEY `craft_tasks_level_idx` (`level`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1896,4 +1896,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-31 16:06:22
+-- Dump completed on 2014-12-31 16:20:46
