@@ -20,14 +20,10 @@
 {% extends "_layout" %}
 
 {% block content %}
+
 	<h1>{{ entry.title }}</h1>
-
+  {% for asset in entry.image %}
+  <img src="{{ asset.url }}" alt="" />
+  {% endfor %}
 	{{ entry.body }}
-
-	<h2>Recent News</h2>
-	<ul>
-		{% for entry in craft.entries.section('news').limit(5).find() %}
-			<li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-		{% endfor %}
-	</ul>
 {% endblock %}
