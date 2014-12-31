@@ -10,8 +10,9 @@
  #}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html class="no-js">
 <head>
+  {% block head %}
 	<meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width" />
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
@@ -28,10 +29,11 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="{{ url.textonly }}/javascript/nav.js"></script>
   <script src="{{ url.textonly }}/javascript/svg-fallback.js"></script>
+  {% endblock %}
 </head>
 
-<body>
-		<header>
+<body class="{% block bodyclass %} {% endblock %}">
+		<header class="{% block headerclass %} {% endblock %}">
       <label role="button" class="show-menu"></label>
       <h1 class="subtitle right"><a href="{{ url('impressum') }}">Impressum</a></h1>
       <a href="{{ siteUrl }}" class="logo-link">
@@ -49,15 +51,20 @@
 			</nav>
       <div class="gradient"></div>
 		</header>
-
+    {% block content %}
     <section class="main-section">
       <article>
-      {% block content %}
+
 				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
 				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
-			{% endblock %}
+
       </article>
     </section>
+    {% endblock %}
+
+    {% block sidebar %}
+    {% endblock %}
+
 
 		<footer class="vcard">
       <span class= "org">{{ footer.org }}</span>

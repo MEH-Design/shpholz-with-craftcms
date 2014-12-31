@@ -20,10 +20,13 @@
 {% extends "_layout" %}
 
 {% block content %}
-
+<section class="main-section">
+  <article>
 	<h1>{{ entry.title }}</h1>
   {% for asset in entry.image %}
   <img src="{{ asset.url }}" alt="" />
   {% endfor %}
 	{{ entry.body }}
+</article>
+</section>
 {% endblock %}

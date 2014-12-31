@@ -1,0 +1,52 @@
+{% extends "_layout" %}
+
+{% block head %}
+  {{ parent() }}
+  <script src="{{ url.textonly }}/javascript/regions/products.js"></script>
+  <script src="{{ url.textonly }}/javascript/vendor/gsap/easing/EasePack.min.js"></script>
+  <script src="{{ url.textonly }}/javascript/vendor/gsap/TweenMax.min.js"></script>
+  <script src="{{ url.textonly }}/javascript/vendor/jquery-mousewheel/jquery.mousewheel.js"></script>
+  <script src="{{ url.textonly }}/javascript/scrolling.js"></script>
+{% endblock %}
+
+{% block bodyclass %}
+use-wrapper has-sidebar
+{% endblock %}
+
+{% block headerclass %}
+small
+{% endblock %}
+
+{% block content %}
+{% for entry in craft.entries.section('dienstleistungen').find() %}
+<div class="wrapper small" id="{{ entry.slug }}">
+<section class="main-section">
+  <article>
+    <h1>{{ entry.title }}</h1>
+    {% for asset in entry.image %}
+    <img src="{{ asset.getUrl('scrolling') }}" alt="" />
+    {% endfor %}
+    {{ entry.body }}
+  </article>
+</section>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+<aside>
+  <div class="container">
+    {% for entry in craft.entries.section('dienstleistungen').find() %}
+    <a href="#{{ entry.slug }}">
+      <div>
+      {% for asset in entry.image %}
+      <img src="{{ asset.url }}" alt="" />
+      {% endfor %}
+      <p>{{ entry.title }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  <a class="button" role="button" onclick="clickMe(this)"></a>
+</aside>
+{% endblock %}
