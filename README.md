@@ -5,3 +5,11 @@ Based on [minixc/vagrant-lamp-craft](https://github.com/MiniXC/vagrant-lamp-craf
 Purpose
 -------
 This project provides a website for shp holz gmbh, a company located in Austria, Poland and Germany. It uses Craft's powerful localization tools and enables long-term maintenance of the site via the CMS.
+
+Access
+------
+Access the Dashboard with this user.
+
+| User  |  Password  |
+| ----- | ---------- |
+| admin | admincraft |
