@@ -42,11 +42,21 @@
       </a>
 			<nav role="navigation">
 				<ul>
-          <li class="home"><a href="{{ siteUrl }}" >Home</a></li>
-          <li><a href="{{ url('unternehmen') }}" {% if craft.request.firstSegment == 'unternehmen' %}class="selected"{% endif %}>Unternehmen</a></li>
-          <li><a href="{{ url('dienstleistungen') }}" {% if craft.request.firstSegment == 'dienstleistungen' %}class="selected"{% endif %}>Dienstleistungen</a></li>
-          <li><a href="{{ url('produkte') }}" {% if craft.request.firstSegment == 'produkte' %}class="selected"{% endif %}>Produkte</a></li>
-          <li><a href="{{ url('kontakt') }}" {% if craft.request.firstSegment == 'kontakt' %}class="selected"{% endif %}>Kontakt</a></li>
+          <a href="{{ siteUrl }}" >
+            <li class="home">Home</li>
+          </a>
+          <a href="{{ url('unternehmen') }}">
+            <li {% if craft.request.firstSegment == 'unternehmen' %}class="selected"{% endif %}>Unternehmen</li>
+          </a>
+          <a href="{{ url('dienstleistungen') }}">
+            <li {% if craft.request.firstSegment == 'dienstleistungen' %}class="selected"{% endif %}>Dienstleistungen</li>
+          </a>
+          <a href="{{ url('produkte') }}">
+            <li {% if craft.request.firstSegment == 'produkte' %}class="selected"{% endif %}>Produkte</li>
+          </a>
+          <a href="{{ url('kontakt') }}" >
+            <li {% if craft.request.firstSegment == 'kontakt' %}class="selected"{% endif %}>Kontakt</li>
+          </a>
 				</ul>
 			</nav>
       <div class="gradient"></div>

@@ -219,7 +219,7 @@ CREATE TABLE `craft_assettransforms` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `craft_assettransforms_name_unq_idx` (`name`),
   UNIQUE KEY `craft_assettransforms_handle_unq_idx` (`handle`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -228,7 +228,7 @@ CREATE TABLE `craft_assettransforms` (
 
 LOCK TABLES `craft_assettransforms` WRITE;
 /*!40000 ALTER TABLE `craft_assettransforms` DISABLE KEYS */;
-INSERT INTO `craft_assettransforms` VALUES (1,'scrolling','scrolling','crop','center-center',500,1000,'jpg',80,'2014-12-31 18:38:37','2014-12-31 18:38:37','2014-12-31 18:39:47','eb617d2b-f2a3-43b2-8142-bd34985cb112');
+INSERT INTO `craft_assettransforms` VALUES (1,'scrolling','scrolling','crop','center-center',500,1000,'jpg',80,'2014-12-31 18:38:37','2014-12-31 18:38:37','2014-12-31 18:39:47','eb617d2b-f2a3-43b2-8142-bd34985cb112'),(2,'contact','contact','crop','center-center',128,128,'jpg',80,'2015-01-01 10:47:25','2015-01-01 10:47:25','2015-01-01 10:47:25','74753d5f-1a04-4309-b3f3-df5682838c14');
 /*!40000 ALTER TABLE `craft_assettransforms` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -362,7 +362,7 @@ CREATE TABLE `craft_content` (
   KEY `craft_content_locale_fk` (`locale`),
   CONSTRAINT `craft_content_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_content_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -371,7 +371,7 @@ CREATE TABLE `craft_content` (
 
 LOCK TABLES `craft_content` WRITE;
 /*!40000 ALTER TABLE `craft_content` DISABLE KEYS */;
-INSERT INTO `craft_content` VALUES (1,1,'de',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 14:08:16','94a46312-52ee-4ab0-b3a4-03da8d826a9c'),(2,2,'de','Homepage','<p>Die shp holz gmbh möchte sich bei Ihnen vorstellen!</p><p>Wir sind ein international tätiges Holzhandelsunternehmen mit Hauptsitz in Österreich. Handelsware sind Rohholz und Rohholzprodukte in den jeweiligen Kundenspezifischen Ausformungen</p><p>Neben unserer reinen Holzhandelstätigkeit bieten wir auch Dienstleistungen rund um Holz und Wald an! Genauere Informationen finden Sie in den einzelnen Themenseiten!</p><p>Oder Sie kontaktieren uns einfach!</p><p>Gerhard Pipp<br>Geschäftsführender Gesellschafter!</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 16:39:02','842adbc6-e22b-43d9-83cd-50556d0d2008'),(4,4,'de',NULL,'<p>http://1d0be.github.io/shp-holz</p>','http://1d0be.github.io/shp-holz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:49:48','2014-12-31 16:03:54','40c4de0b-ccc2-4dd7-960a-48f5fca008fd'),(5,5,'de',NULL,'<p>holz gmbh</p>','holz gmbh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:04:51','2014-12-31 15:13:27','99fbb02c-1e2b-4f6c-bbc5-9a928f74b4d4'),(6,6,'de','index-image',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:24:30','2014-12-31 15:24:30','711fbfa6-0f56-486e-bf3f-84f192c934b5'),(8,7,'de',NULL,NULL,NULL,'Andritzer Reichsstraße 162','Graz','8046','Austria','shp holz gmbh','DI Gerhard Pipp','+43 31 66 93 38 90','ATU 55070602','2014-12-31 15:44:38','2014-12-31 15:55:56','7aa41840-f027-4bd0-b9e7-eb41645551af'),(9,8,'de','Unternehmen','<p>Die Vorgängerfirma die hwp holzverarbeitungs- gmbh wurde im Jahre 20… von drei Gesellschaftern gegründet nach Ausscheiden eines Gesellschafters im Jahre 20… bestand diese bis 20…</p><p>Nach … jähriger Tätigkeit dieser Firma erfolgte eine Abspaltung der Gesellschaft, wobei die Stammfirma verkleinert erhalten blieb und vom derzeitigen Gesellschafter Gerhard Pipp unter dem Namen shp holz gmbh bis heute weiter geführt wird.</p><p>Im Jahre 20…. entstand ein Schwesterunternehmen, die <strong>shp drewno</strong> in Polen.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 16:11:41','2014-12-31 16:24:48','d82b257b-5511-41b2-9ce8-a9c1b222b5b6'),(15,9,'de','company',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 16:18:32','2014-12-31 16:18:32','badf6cdb-b990-429f-9753-7c464dfb6f18'),(16,10,'de','Ipsum1','<p>Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.</p><p>Quickly aggregate B2B users and worldwide potentialities. </p><p>Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies.<br></p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 18:27:20','2014-12-31 18:32:18','8e36d340-5ef6-4983-af41-0beb85b5fe9a'),(17,11,'de','Ispum2','<p>Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.</p><p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 18:29:28','2014-12-31 18:32:12','feb860c9-d5a4-475a-a06e-f4f13255627d'),(18,12,'de','Rundholz für die Sägeindustrie','<p>Wir liefern sowohl Nadel- als auch Laubholzsortimente nach den Anforderungen des jeweiligen Kunden z.B.:</p><p>gemäß den österreichischen Holzhandelsusancen</p><p>gemäß den Heilbronner Sortierklassen für Langholz</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 18:50:01','2014-12-31 18:50:01','86164344-ffc9-4283-80a8-574f8d810f36'),(19,13,'de','6260730214 61c9e39a45 b',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 21:07:15','2014-12-31 21:07:15','95253e3b-2d09-4d70-8d87-1aa4a1c0c32c'),(20,14,'de','Industrieholz für die Papier- und Plattenindustrie','<p>Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.</p><p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 21:07:26','2014-12-31 21:07:54','75671380-50c7-4551-8e24-c0b8e162aa3b');
+INSERT INTO `craft_content` VALUES (1,1,'de',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 14:08:16','94a46312-52ee-4ab0-b3a4-03da8d826a9c'),(2,2,'de','Homepage','<p>Die shp holz gmbh möchte sich bei Ihnen vorstellen!</p><p>Wir sind ein international tätiges Holzhandelsunternehmen mit Hauptsitz in Österreich. Handelsware sind Rohholz und Rohholzprodukte in den jeweiligen Kundenspezifischen Ausformungen</p><p>Neben unserer reinen Holzhandelstätigkeit bieten wir auch Dienstleistungen rund um Holz und Wald an! Genauere Informationen finden Sie in den einzelnen Themenseiten!</p><p>Oder Sie kontaktieren uns einfach!</p><p>Gerhard Pipp<br>Geschäftsführender Gesellschafter!</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:08:16','2014-12-31 16:39:02','842adbc6-e22b-43d9-83cd-50556d0d2008'),(4,4,'de',NULL,'<p>http://1d0be.github.io/shp-holz</p>','http://1d0be.github.io/shp-holz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 14:49:48','2014-12-31 16:03:54','40c4de0b-ccc2-4dd7-960a-48f5fca008fd'),(5,5,'de',NULL,'<p>holz gmbh</p>','holz gmbh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:04:51','2014-12-31 15:13:27','99fbb02c-1e2b-4f6c-bbc5-9a928f74b4d4'),(6,6,'de','index-image',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 15:24:30','2014-12-31 15:24:30','711fbfa6-0f56-486e-bf3f-84f192c934b5'),(8,7,'de',NULL,NULL,NULL,'Andritzer Reichsstraße 162','Graz','8046','Austria','shp holz gmbh','DI Gerhard Pipp','+43 31 66 93 38 90','ATU 55070602','2014-12-31 15:44:38','2014-12-31 15:55:56','7aa41840-f027-4bd0-b9e7-eb41645551af'),(9,8,'de','Unternehmen','<p>Die Vorgängerfirma die hwp holzverarbeitungs- gmbh wurde im Jahre 20… von drei Gesellschaftern gegründet nach Ausscheiden eines Gesellschafters im Jahre 20… bestand diese bis 20…</p><p>Nach … jähriger Tätigkeit dieser Firma erfolgte eine Abspaltung der Gesellschaft, wobei die Stammfirma verkleinert erhalten blieb und vom derzeitigen Gesellschafter Gerhard Pipp unter dem Namen shp holz gmbh bis heute weiter geführt wird.</p><p>Im Jahre 20…. entstand ein Schwesterunternehmen, die <strong>shp drewno</strong> in Polen.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 16:11:41','2015-01-01 10:44:02','d82b257b-5511-41b2-9ce8-a9c1b222b5b6'),(15,9,'de','company',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 16:18:32','2014-12-31 16:18:32','badf6cdb-b990-429f-9753-7c464dfb6f18'),(16,10,'de','Ipsum1','<p>Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.</p><p>Quickly aggregate B2B users and worldwide potentialities. </p><p>Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies.<br></p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 18:27:20','2014-12-31 18:32:18','8e36d340-5ef6-4983-af41-0beb85b5fe9a'),(17,11,'de','Ispum2','<p>Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.</p><p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 18:29:28','2014-12-31 18:32:12','feb860c9-d5a4-475a-a06e-f4f13255627d'),(18,12,'de','Rundholz für die Sägeindustrie','<p>Wir liefern sowohl Nadel- als auch Laubholzsortimente nach den Anforderungen des jeweiligen Kunden z.B.:</p><p>gemäß den österreichischen Holzhandelsusancen</p><p>gemäß den Heilbronner Sortierklassen für Langholz</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 18:50:01','2014-12-31 18:50:01','86164344-ffc9-4283-80a8-574f8d810f36'),(19,13,'de','6260730214 61c9e39a45 b',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 21:07:15','2014-12-31 21:07:15','95253e3b-2d09-4d70-8d87-1aa4a1c0c32c'),(20,14,'de','Industrieholz für die Papier- und Plattenindustrie','<p>Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.</p><p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.</p>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-12-31 21:07:26','2014-12-31 21:07:54','75671380-50c7-4551-8e24-c0b8e162aa3b');
 /*!40000 ALTER TABLE `craft_content` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -440,7 +440,7 @@ CREATE TABLE `craft_elements` (
 
 LOCK TABLES `craft_elements` WRITE;
 /*!40000 ALTER TABLE `craft_elements` DISABLE KEYS */;
-INSERT INTO `craft_elements` VALUES (1,'User',1,0,'2014-12-31 14:08:16','2014-12-31 14:08:16','f4404892-6a63-4078-88d8-bf8b136e7b50'),(2,'Entry',1,0,'2014-12-31 14:08:16','2014-12-31 16:39:02','d1446015-0b47-4c15-8dbc-9157b7649f22'),(4,'GlobalSet',1,0,'2014-12-31 14:49:48','2014-12-31 16:03:54','f66ea431-9cfd-40c5-a9d2-0fa1b9a3461e'),(5,'GlobalSet',1,0,'2014-12-31 15:04:51','2014-12-31 15:13:27','8ac80665-1570-45ff-8fdf-21cdbee5fade'),(6,'Asset',1,0,'2014-12-31 15:24:30','2014-12-31 15:24:30','d58375b5-7c3c-4b28-b90e-81f13b7b299a'),(7,'GlobalSet',1,0,'2014-12-31 15:44:38','2014-12-31 15:55:56','eb29bffb-2859-46fb-bbd1-0f5fd49a49d4'),(8,'Entry',1,0,'2014-12-31 16:11:41','2014-12-31 16:24:48','9859d581-7c15-4d38-82ea-9b8657a1a762'),(9,'Asset',1,0,'2014-12-31 16:18:32','2014-12-31 16:18:32','da657c51-69b9-4173-aa87-1181037ba0e1'),(10,'Entry',1,0,'2014-12-31 18:27:20','2014-12-31 18:32:18','e90dbffc-0693-4e8c-bf8b-bfcb5bea5c9b'),(11,'Entry',1,0,'2014-12-31 18:29:28','2014-12-31 18:32:12','9283e774-4d12-4e7e-b2f6-974b63474992'),(12,'Entry',1,0,'2014-12-31 18:50:01','2014-12-31 18:50:01','cba83739-53c7-407b-86e1-a676edd75d1b'),(13,'Asset',1,0,'2014-12-31 21:07:15','2014-12-31 21:07:15','82f8d4be-0946-4dae-9869-51166d3d2f47'),(14,'Entry',1,0,'2014-12-31 21:07:26','2014-12-31 21:07:54','ab08a3d0-6008-48bd-a183-7aae922cdcf7');
+INSERT INTO `craft_elements` VALUES (1,'User',1,0,'2014-12-31 14:08:16','2014-12-31 14:08:16','f4404892-6a63-4078-88d8-bf8b136e7b50'),(2,'Entry',1,0,'2014-12-31 14:08:16','2014-12-31 16:39:02','d1446015-0b47-4c15-8dbc-9157b7649f22'),(4,'GlobalSet',1,0,'2014-12-31 14:49:48','2014-12-31 16:03:54','f66ea431-9cfd-40c5-a9d2-0fa1b9a3461e'),(5,'GlobalSet',1,0,'2014-12-31 15:04:51','2014-12-31 15:13:27','8ac80665-1570-45ff-8fdf-21cdbee5fade'),(6,'Asset',1,0,'2014-12-31 15:24:30','2014-12-31 15:24:30','d58375b5-7c3c-4b28-b90e-81f13b7b299a'),(7,'GlobalSet',1,0,'2014-12-31 15:44:38','2014-12-31 15:55:56','eb29bffb-2859-46fb-bbd1-0f5fd49a49d4'),(8,'Entry',1,0,'2014-12-31 16:11:41','2015-01-01 10:44:02','9859d581-7c15-4d38-82ea-9b8657a1a762'),(9,'Asset',1,0,'2014-12-31 16:18:32','2014-12-31 16:18:32','da657c51-69b9-4173-aa87-1181037ba0e1'),(10,'Entry',1,0,'2014-12-31 18:27:20','2014-12-31 18:32:18','e90dbffc-0693-4e8c-bf8b-bfcb5bea5c9b'),(11,'Entry',1,0,'2014-12-31 18:29:28','2014-12-31 18:32:12','9283e774-4d12-4e7e-b2f6-974b63474992'),(12,'Entry',1,0,'2014-12-31 18:50:01','2014-12-31 18:50:01','cba83739-53c7-407b-86e1-a676edd75d1b'),(13,'Asset',1,0,'2014-12-31 21:07:15','2014-12-31 21:07:15','82f8d4be-0946-4dae-9869-51166d3d2f47'),(14,'Entry',1,0,'2014-12-31 21:07:26','2014-12-31 21:07:54','ab08a3d0-6008-48bd-a183-7aae922cdcf7');
 /*!40000 ALTER TABLE `craft_elements` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -469,7 +469,7 @@ CREATE TABLE `craft_elements_i18n` (
   KEY `craft_elements_i18n_locale_fk` (`locale`),
   CONSTRAINT `craft_elements_i18n_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_elements_i18n_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -478,7 +478,7 @@ CREATE TABLE `craft_elements_i18n` (
 
 LOCK TABLES `craft_elements_i18n` WRITE;
 /*!40000 ALTER TABLE `craft_elements_i18n` DISABLE KEYS */;
-INSERT INTO `craft_elements_i18n` VALUES (1,1,'de','',NULL,1,'2014-12-31 14:08:16','2014-12-31 14:08:16','a7d269aa-769e-4195-ba97-cf88b741dfe4'),(2,2,'de','homepage','__home__',1,'2014-12-31 14:08:16','2014-12-31 16:39:02','f84031ec-4331-4752-a7aa-4d196b53b826'),(4,4,'de','',NULL,1,'2014-12-31 14:49:48','2014-12-31 16:03:54','c7b19a2a-c386-43ea-8dd4-26c985d48619'),(5,5,'de','',NULL,1,'2014-12-31 15:04:51','2014-12-31 15:13:27','8b5b9c31-0ad1-4745-a7c7-42ed448cc8d8'),(6,6,'de','index-image',NULL,1,'2014-12-31 15:24:30','2014-12-31 15:24:30','268c7666-22a1-4856-b2b2-f0844c5ed578'),(8,7,'de','',NULL,1,'2014-12-31 15:44:38','2014-12-31 15:55:56','488c4b27-243e-4129-aa7a-b28b200804ff'),(9,8,'de','unternehmen','unternehmen',1,'2014-12-31 16:11:41','2014-12-31 16:24:48','58702f73-b9f2-4331-a024-2e60a122ba71'),(15,9,'de','company',NULL,1,'2014-12-31 16:18:32','2014-12-31 16:18:32','08a8e394-6db4-43e0-b018-b2354db61856'),(16,10,'de','ipsum1',NULL,1,'2014-12-31 18:27:21','2014-12-31 18:32:19','1395ced5-e7ff-4b85-b29c-342042656775'),(17,11,'de','ispum2',NULL,1,'2014-12-31 18:29:28','2014-12-31 18:32:12','e92596e7-db6b-4a1b-99ec-c4416b88043b'),(18,12,'de','rundholz-für-die-sägeindustrie',NULL,1,'2014-12-31 18:50:01','2014-12-31 18:50:01','109aa21c-4c83-4cac-8434-5acba712bff3'),(19,13,'de','6260730214-61c9e39a45-b',NULL,1,'2014-12-31 21:07:15','2014-12-31 21:07:15','2dd1e2ee-f59e-4d5e-964d-d195fb7f184f'),(20,14,'de','industrieholz-für-die-papier-und-plattenindustrie',NULL,1,'2014-12-31 21:07:26','2014-12-31 21:07:54','c031c24f-5dd3-45a1-8b3d-0d68264c7a87');
+INSERT INTO `craft_elements_i18n` VALUES (1,1,'de','',NULL,1,'2014-12-31 14:08:16','2014-12-31 14:08:16','a7d269aa-769e-4195-ba97-cf88b741dfe4'),(2,2,'de','homepage','__home__',1,'2014-12-31 14:08:16','2014-12-31 16:39:02','f84031ec-4331-4752-a7aa-4d196b53b826'),(4,4,'de','',NULL,1,'2014-12-31 14:49:48','2014-12-31 16:03:54','c7b19a2a-c386-43ea-8dd4-26c985d48619'),(5,5,'de','',NULL,1,'2014-12-31 15:04:51','2014-12-31 15:13:27','8b5b9c31-0ad1-4745-a7c7-42ed448cc8d8'),(6,6,'de','index-image',NULL,1,'2014-12-31 15:24:30','2014-12-31 15:24:30','268c7666-22a1-4856-b2b2-f0844c5ed578'),(8,7,'de','',NULL,1,'2014-12-31 15:44:38','2014-12-31 15:55:56','488c4b27-243e-4129-aa7a-b28b200804ff'),(9,8,'de','unternehmen','unternehmen',1,'2014-12-31 16:11:41','2015-01-01 10:44:02','58702f73-b9f2-4331-a024-2e60a122ba71'),(15,9,'de','company',NULL,1,'2014-12-31 16:18:32','2014-12-31 16:18:32','08a8e394-6db4-43e0-b018-b2354db61856'),(16,10,'de','ipsum1',NULL,1,'2014-12-31 18:27:21','2014-12-31 18:32:19','1395ced5-e7ff-4b85-b29c-342042656775'),(17,11,'de','ispum2',NULL,1,'2014-12-31 18:29:28','2014-12-31 18:32:12','e92596e7-db6b-4a1b-99ec-c4416b88043b'),(18,12,'de','rundholz-für-die-sägeindustrie',NULL,1,'2014-12-31 18:50:01','2014-12-31 18:50:01','109aa21c-4c83-4cac-8434-5acba712bff3'),(19,13,'de','6260730214-61c9e39a45-b',NULL,1,'2014-12-31 21:07:15','2014-12-31 21:07:15','2dd1e2ee-f59e-4d5e-964d-d195fb7f184f'),(20,14,'de','industrieholz-für-die-papier-und-plattenindustrie',NULL,1,'2014-12-31 21:07:26','2014-12-31 21:07:54','c031c24f-5dd3-45a1-8b3d-0d68264c7a87');
 /*!40000 ALTER TABLE `craft_elements_i18n` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -550,7 +550,7 @@ CREATE TABLE `craft_entries` (
 
 LOCK TABLES `craft_entries` WRITE;
 /*!40000 ALTER TABLE `craft_entries` DISABLE KEYS */;
-INSERT INTO `craft_entries` VALUES (2,1,1,NULL,'2014-12-31 16:12:31',NULL,'2014-12-31 14:08:16','2014-12-31 16:39:02','1d09a30f-0ed6-4223-a37e-b47e284db4fb'),(8,3,3,NULL,'2014-12-31 16:12:46',NULL,'2014-12-31 16:11:41','2014-12-31 16:24:48','ce8e7073-4917-417a-8b33-21ec4d0c5491'),(10,4,4,1,'2014-12-31 18:27:00',NULL,'2014-12-31 18:27:21','2014-12-31 18:32:19','8595fa5b-4634-4ee7-b29a-c80571808331'),(11,4,4,1,'2014-12-31 18:29:00',NULL,'2014-12-31 18:29:28','2014-12-31 18:32:12','c6f459ab-a310-416a-8864-8a4c7ba13796'),(12,5,5,1,'2014-12-31 18:50:01',NULL,'2014-12-31 18:50:01','2014-12-31 18:50:01','e578c07e-dcde-4131-98ea-dfc03598fedb'),(14,5,5,1,'2014-12-31 21:00:00',NULL,'2014-12-31 21:07:26','2014-12-31 21:07:54','5ca625ad-0203-44f9-b60d-68d3c01c9ae1');
+INSERT INTO `craft_entries` VALUES (2,1,1,NULL,'2014-12-31 16:12:31',NULL,'2014-12-31 14:08:16','2014-12-31 16:39:02','1d09a30f-0ed6-4223-a37e-b47e284db4fb'),(8,3,3,NULL,'2015-01-01 10:44:01',NULL,'2014-12-31 16:11:41','2015-01-01 10:44:01','ce8e7073-4917-417a-8b33-21ec4d0c5491'),(10,4,4,1,'2014-12-31 18:27:00',NULL,'2014-12-31 18:27:21','2014-12-31 18:32:19','8595fa5b-4634-4ee7-b29a-c80571808331'),(11,4,4,1,'2014-12-31 18:29:00',NULL,'2014-12-31 18:29:28','2014-12-31 18:32:12','c6f459ab-a310-416a-8864-8a4c7ba13796'),(12,5,5,1,'2014-12-31 18:50:01',NULL,'2014-12-31 18:50:01','2014-12-31 18:50:01','e578c07e-dcde-4131-98ea-dfc03598fedb'),(14,5,5,1,'2014-12-31 21:00:00',NULL,'2014-12-31 21:07:26','2014-12-31 21:07:54','5ca625ad-0203-44f9-b60d-68d3c01c9ae1');
 /*!40000 ALTER TABLE `craft_entries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -621,7 +621,7 @@ CREATE TABLE `craft_entrytypes` (
   KEY `craft_entrytypes_fieldLayoutId_fk` (`fieldLayoutId`),
   CONSTRAINT `craft_entrytypes_fieldLayoutId_fk` FOREIGN KEY (`fieldLayoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE SET NULL,
   CONSTRAINT `craft_entrytypes_sectionId_fk` FOREIGN KEY (`sectionId`) REFERENCES `craft_sections` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -630,7 +630,7 @@ CREATE TABLE `craft_entrytypes` (
 
 LOCK TABLES `craft_entrytypes` WRITE;
 /*!40000 ALTER TABLE `craft_entrytypes` DISABLE KEYS */;
-INSERT INTO `craft_entrytypes` VALUES (1,1,24,'Homepage','homepage',1,'Titel',NULL,NULL,'2014-12-31 14:08:16','2014-12-31 16:13:29','88fcb01d-0452-404b-a87e-42c745e3672a'),(3,3,25,'unternehmen','unternehmen',0,NULL,'{section.name|raw}',NULL,'2014-12-31 16:11:41','2014-12-31 16:13:40','b5652ffc-9e32-484c-b5ab-8203629fab7d'),(4,4,31,'Dienstleistungen','dienstleistungen',1,'Titel',NULL,NULL,'2014-12-31 18:24:16','2014-12-31 18:49:00','fa18fda8-d156-4b62-bfdd-0f01903d096c'),(5,5,30,'Produkte','produkte',1,'Titel',NULL,NULL,'2014-12-31 18:47:18','2014-12-31 18:47:48','ccb0c207-54d3-4f4b-b922-56ebded130fd');
+INSERT INTO `craft_entrytypes` VALUES (1,1,24,'Homepage','homepage',1,'Titel',NULL,NULL,'2014-12-31 14:08:16','2014-12-31 16:13:29','88fcb01d-0452-404b-a87e-42c745e3672a'),(3,3,25,'unternehmen','unternehmen',0,NULL,'{section.name|raw}',NULL,'2014-12-31 16:11:41','2014-12-31 16:13:40','b5652ffc-9e32-484c-b5ab-8203629fab7d'),(4,4,31,'Dienstleistungen','dienstleistungen',1,'Titel',NULL,NULL,'2014-12-31 18:24:16','2014-12-31 18:49:00','fa18fda8-d156-4b62-bfdd-0f01903d096c'),(5,5,30,'Produkte','produkte',1,'Titel',NULL,NULL,'2014-12-31 18:47:18','2014-12-31 18:47:48','ccb0c207-54d3-4f4b-b922-56ebded130fd'),(6,6,36,'Kontakt','kontakt',0,NULL,'{fn}',NULL,'2015-01-01 10:43:45','2015-01-01 10:49:47','756e99a6-5fda-498b-85e5-55aa8bac34ff'),(7,6,35,'Land','land',1,'Titel',NULL,NULL,'2015-01-01 10:48:41','2015-01-01 10:49:22','9231fc34-f51d-4ad1-8593-61b0761e1507');
 /*!40000 ALTER TABLE `craft_entrytypes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -728,7 +728,7 @@ CREATE TABLE `craft_fieldlayoutfields` (
   CONSTRAINT `craft_fieldlayoutfields_fieldId_fk` FOREIGN KEY (`fieldId`) REFERENCES `craft_fields` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_fieldlayoutfields_layoutId_fk` FOREIGN KEY (`layoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_fieldlayoutfields_tabId_fk` FOREIGN KEY (`tabId`) REFERENCES `craft_fieldlayouttabs` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -737,7 +737,7 @@ CREATE TABLE `craft_fieldlayoutfields` (
 
 LOCK TABLES `craft_fieldlayoutfields` WRITE;
 /*!40000 ALTER TABLE `craft_fieldlayoutfields` DISABLE KEYS */;
-INSERT INTO `craft_fieldlayoutfields` VALUES (2,5,2,1,1,1,'2014-12-31 14:08:17','2014-12-31 14:08:17','1a86a507-04d8-4cd1-aa07-a1ed971607c9'),(3,5,2,2,0,2,'2014-12-31 14:08:17','2014-12-31 14:08:17','4079befa-4af1-41d6-9d15-74b376e8d3eb'),(7,10,6,3,0,1,'2014-12-31 14:59:41','2014-12-31 14:59:41','e56128cd-44a2-4bc2-aa40-87053d4cf0e8'),(9,12,8,3,0,1,'2014-12-31 15:13:06','2014-12-31 15:13:06','beb28946-6822-41f7-9433-378c91a925b5'),(30,20,13,9,0,1,'2014-12-31 15:55:45','2014-12-31 15:55:45','5c826e6c-2260-4073-835e-f0103975d8bb'),(31,20,13,10,0,2,'2014-12-31 15:55:45','2014-12-31 15:55:45','5165db47-0a69-4379-af95-907154ea64aa'),(32,20,13,11,0,3,'2014-12-31 15:55:45','2014-12-31 15:55:45','2794299c-01c0-4e0c-8c31-bda08a69d016'),(33,20,13,12,0,4,'2014-12-31 15:55:45','2014-12-31 15:55:45','e542c99e-692c-4bd4-aab0-ded4f2b86db6'),(34,20,13,8,0,5,'2014-12-31 15:55:45','2014-12-31 15:55:45','f00187b3-4a1a-4d9a-a141-76b611834f39'),(35,20,13,7,0,6,'2014-12-31 15:55:45','2014-12-31 15:55:45','b8c7f90c-c807-4257-9a78-43f58b8a1fb0'),(36,20,13,6,0,7,'2014-12-31 15:55:45','2014-12-31 15:55:45','eee41905-8279-4bcf-aa2c-010177ce049d'),(37,20,13,5,0,8,'2014-12-31 15:55:45','2014-12-31 15:55:45','974f1fc9-f341-4e10-9463-2bb9715dcf6b'),(42,24,16,1,1,1,'2014-12-31 16:13:29','2014-12-31 16:13:29','eb45710f-9dad-49bd-aa12-a0dd4f61df8d'),(43,24,16,4,1,2,'2014-12-31 16:13:29','2014-12-31 16:13:29','bc014cdd-ed93-4fe6-bf73-8dd483257f95'),(44,25,17,4,1,1,'2014-12-31 16:13:40','2014-12-31 16:13:40','635b2331-88a2-48b4-8e13-6f1d5ef5e424'),(45,25,17,1,1,2,'2014-12-31 16:13:40','2014-12-31 16:13:40','5ca79fe4-6915-4aea-8e56-98bf538d2ec5'),(50,30,20,4,1,1,'2014-12-31 18:47:48','2014-12-31 18:47:48','a6a31216-ea4c-4f12-9358-e3cba3cd2239'),(51,30,20,1,1,2,'2014-12-31 18:47:48','2014-12-31 18:47:48','cec4f7ee-368c-4a82-8161-b0108b6053d6'),(52,31,21,4,1,1,'2014-12-31 18:49:00','2014-12-31 18:49:00','70d4f60d-b32f-4ea2-bd71-4bc79223e4be'),(53,31,21,1,1,2,'2014-12-31 18:49:00','2014-12-31 18:49:00','d054bc5a-72f6-4a10-9522-7af387f476a4');
+INSERT INTO `craft_fieldlayoutfields` VALUES (2,5,2,1,1,1,'2014-12-31 14:08:17','2014-12-31 14:08:17','1a86a507-04d8-4cd1-aa07-a1ed971607c9'),(3,5,2,2,0,2,'2014-12-31 14:08:17','2014-12-31 14:08:17','4079befa-4af1-41d6-9d15-74b376e8d3eb'),(7,10,6,3,0,1,'2014-12-31 14:59:41','2014-12-31 14:59:41','e56128cd-44a2-4bc2-aa40-87053d4cf0e8'),(9,12,8,3,0,1,'2014-12-31 15:13:06','2014-12-31 15:13:06','beb28946-6822-41f7-9433-378c91a925b5'),(30,20,13,9,0,1,'2014-12-31 15:55:45','2014-12-31 15:55:45','5c826e6c-2260-4073-835e-f0103975d8bb'),(31,20,13,10,0,2,'2014-12-31 15:55:45','2014-12-31 15:55:45','5165db47-0a69-4379-af95-907154ea64aa'),(32,20,13,11,0,3,'2014-12-31 15:55:45','2014-12-31 15:55:45','2794299c-01c0-4e0c-8c31-bda08a69d016'),(33,20,13,12,0,4,'2014-12-31 15:55:45','2014-12-31 15:55:45','e542c99e-692c-4bd4-aab0-ded4f2b86db6'),(34,20,13,8,0,5,'2014-12-31 15:55:45','2014-12-31 15:55:45','f00187b3-4a1a-4d9a-a141-76b611834f39'),(35,20,13,7,0,6,'2014-12-31 15:55:45','2014-12-31 15:55:45','b8c7f90c-c807-4257-9a78-43f58b8a1fb0'),(36,20,13,6,0,7,'2014-12-31 15:55:45','2014-12-31 15:55:45','eee41905-8279-4bcf-aa2c-010177ce049d'),(37,20,13,5,0,8,'2014-12-31 15:55:45','2014-12-31 15:55:45','974f1fc9-f341-4e10-9463-2bb9715dcf6b'),(42,24,16,1,1,1,'2014-12-31 16:13:29','2014-12-31 16:13:29','eb45710f-9dad-49bd-aa12-a0dd4f61df8d'),(43,24,16,4,1,2,'2014-12-31 16:13:29','2014-12-31 16:13:29','bc014cdd-ed93-4fe6-bf73-8dd483257f95'),(44,25,17,4,1,1,'2014-12-31 16:13:40','2014-12-31 16:13:40','635b2331-88a2-48b4-8e13-6f1d5ef5e424'),(45,25,17,1,1,2,'2014-12-31 16:13:40','2014-12-31 16:13:40','5ca79fe4-6915-4aea-8e56-98bf538d2ec5'),(50,30,20,4,1,1,'2014-12-31 18:47:48','2014-12-31 18:47:48','a6a31216-ea4c-4f12-9358-e3cba3cd2239'),(51,30,20,1,1,2,'2014-12-31 18:47:48','2014-12-31 18:47:48','cec4f7ee-368c-4a82-8161-b0108b6053d6'),(52,31,21,4,1,1,'2014-12-31 18:49:00','2014-12-31 18:49:00','70d4f60d-b32f-4ea2-bd71-4bc79223e4be'),(53,31,21,1,1,2,'2014-12-31 18:49:00','2014-12-31 18:49:00','d054bc5a-72f6-4a10-9522-7af387f476a4'),(60,35,24,8,0,1,'2015-01-01 10:49:22','2015-01-01 10:49:22','b0fcbaac-6e96-4bd6-a4b0-4b51cadc4f72'),(61,35,24,4,0,2,'2015-01-01 10:49:22','2015-01-01 10:49:22','6b1bef9c-ca45-42b5-8cde-0fd87b71659f'),(62,36,25,4,1,1,'2015-01-01 10:49:47','2015-01-01 10:49:47','4a9a5153-45d9-4e23-9644-abeb932650d7'),(63,36,25,8,1,2,'2015-01-01 10:49:47','2015-01-01 10:49:47','384aa45c-4f34-4418-ad9b-0a7502bb2ff9'),(64,36,25,10,1,3,'2015-01-01 10:49:47','2015-01-01 10:49:47','75c40a71-d345-4daf-90bd-de0fe3fe881b'),(65,36,25,1,0,4,'2015-01-01 10:49:47','2015-01-01 10:49:47','f9ce22a3-6bdd-4026-a721-6bc8fdb6f78d');
 /*!40000 ALTER TABLE `craft_fieldlayoutfields` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -756,7 +756,7 @@ CREATE TABLE `craft_fieldlayouts` (
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `craft_fieldlayouts_type_idx` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -765,7 +765,7 @@ CREATE TABLE `craft_fieldlayouts` (
 
 LOCK TABLES `craft_fieldlayouts` WRITE;
 /*!40000 ALTER TABLE `craft_fieldlayouts` DISABLE KEYS */;
-INSERT INTO `craft_fieldlayouts` VALUES (1,'Tag','2014-12-31 14:08:16','2014-12-31 14:08:16','85d43867-861c-4328-bcc1-4083fbed7b7a'),(5,'Entry','2014-12-31 14:08:17','2014-12-31 14:08:17','968ef92e-35b2-4ab6-9110-ee26276b8f90'),(10,'GlobalSet','2014-12-31 14:59:41','2014-12-31 14:59:41','c859ea33-931c-4a53-9610-38becc13d163'),(12,'GlobalSet','2014-12-31 15:13:06','2014-12-31 15:13:06','02f22516-1b9d-40cf-b1bc-b07a0f883222'),(14,'Asset','2014-12-31 15:22:53','2014-12-31 15:22:53','6bf62682-a7a7-4cd4-aaac-db4d9307315f'),(20,'GlobalSet','2014-12-31 15:55:45','2014-12-31 15:55:45','c40dde7f-344b-4938-8923-54167fe2b520'),(24,'Entry','2014-12-31 16:13:29','2014-12-31 16:13:29','347c6e29-84d1-4a6f-8192-55c3605472fe'),(25,'Entry','2014-12-31 16:13:40','2014-12-31 16:13:40','512946f1-90dd-442f-93c4-06585b485fe7'),(30,'Entry','2014-12-31 18:47:48','2014-12-31 18:47:48','0f5c3ce6-3e66-4170-bdfb-f0a052aecc60'),(31,'Entry','2014-12-31 18:49:00','2014-12-31 18:49:00','99f7c72a-44ee-4216-85b8-3cb532a3291d');
+INSERT INTO `craft_fieldlayouts` VALUES (1,'Tag','2014-12-31 14:08:16','2014-12-31 14:08:16','85d43867-861c-4328-bcc1-4083fbed7b7a'),(5,'Entry','2014-12-31 14:08:17','2014-12-31 14:08:17','968ef92e-35b2-4ab6-9110-ee26276b8f90'),(10,'GlobalSet','2014-12-31 14:59:41','2014-12-31 14:59:41','c859ea33-931c-4a53-9610-38becc13d163'),(12,'GlobalSet','2014-12-31 15:13:06','2014-12-31 15:13:06','02f22516-1b9d-40cf-b1bc-b07a0f883222'),(14,'Asset','2014-12-31 15:22:53','2014-12-31 15:22:53','6bf62682-a7a7-4cd4-aaac-db4d9307315f'),(20,'GlobalSet','2014-12-31 15:55:45','2014-12-31 15:55:45','c40dde7f-344b-4938-8923-54167fe2b520'),(24,'Entry','2014-12-31 16:13:29','2014-12-31 16:13:29','347c6e29-84d1-4a6f-8192-55c3605472fe'),(25,'Entry','2014-12-31 16:13:40','2014-12-31 16:13:40','512946f1-90dd-442f-93c4-06585b485fe7'),(30,'Entry','2014-12-31 18:47:48','2014-12-31 18:47:48','0f5c3ce6-3e66-4170-bdfb-f0a052aecc60'),(31,'Entry','2014-12-31 18:49:00','2014-12-31 18:49:00','99f7c72a-44ee-4216-85b8-3cb532a3291d'),(35,'Entry','2015-01-01 10:49:22','2015-01-01 10:49:22','61fc1cd9-31d8-4e65-bd9c-5d8b4bd1924d'),(36,'Entry','2015-01-01 10:49:47','2015-01-01 10:49:47','8e417893-dbe3-49db-bfe6-f2d3f5628c50');
 /*!40000 ALTER TABLE `craft_fieldlayouts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -788,7 +788,7 @@ CREATE TABLE `craft_fieldlayouttabs` (
   KEY `craft_fieldlayouttabs_sortOrder_idx` (`sortOrder`),
   KEY `craft_fieldlayouttabs_layoutId_fk` (`layoutId`),
   CONSTRAINT `craft_fieldlayouttabs_layoutId_fk` FOREIGN KEY (`layoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -797,7 +797,7 @@ CREATE TABLE `craft_fieldlayouttabs` (
 
 LOCK TABLES `craft_fieldlayouttabs` WRITE;
 /*!40000 ALTER TABLE `craft_fieldlayouttabs` DISABLE KEYS */;
-INSERT INTO `craft_fieldlayouttabs` VALUES (2,5,'Inhalt',1,'2014-12-31 14:08:17','2014-12-31 14:08:17','5a872e04-a204-443a-9546-a097dfbff17d'),(6,10,'Inhalt',1,'2014-12-31 14:59:41','2014-12-31 14:59:41','6d62d17f-9965-4f20-97ab-eb97ad33ba1d'),(8,12,'Inhalt',1,'2014-12-31 15:13:06','2014-12-31 15:13:06','272e67fc-5f0e-481a-b72d-ccb076a77668'),(13,20,'Inhalt',1,'2014-12-31 15:55:45','2014-12-31 15:55:45','2978b51c-7b45-4db2-9959-b758a77e2121'),(16,24,'Inhalt',1,'2014-12-31 16:13:29','2014-12-31 16:13:29','95a61c3f-4b63-4656-94c8-ccfac3b5f37e'),(17,25,'Inhalt',1,'2014-12-31 16:13:40','2014-12-31 16:13:40','5e559754-464a-482e-973c-2d6cb41f98cd'),(20,30,'Inhalt',1,'2014-12-31 18:47:48','2014-12-31 18:47:48','d27a19be-7981-44fc-94b6-5d5e780e968f'),(21,31,'Inhalt',1,'2014-12-31 18:49:00','2014-12-31 18:49:00','932dae62-aa9c-403e-9338-18c27caf40aa');
+INSERT INTO `craft_fieldlayouttabs` VALUES (2,5,'Inhalt',1,'2014-12-31 14:08:17','2014-12-31 14:08:17','5a872e04-a204-443a-9546-a097dfbff17d'),(6,10,'Inhalt',1,'2014-12-31 14:59:41','2014-12-31 14:59:41','6d62d17f-9965-4f20-97ab-eb97ad33ba1d'),(8,12,'Inhalt',1,'2014-12-31 15:13:06','2014-12-31 15:13:06','272e67fc-5f0e-481a-b72d-ccb076a77668'),(13,20,'Inhalt',1,'2014-12-31 15:55:45','2014-12-31 15:55:45','2978b51c-7b45-4db2-9959-b758a77e2121'),(16,24,'Inhalt',1,'2014-12-31 16:13:29','2014-12-31 16:13:29','95a61c3f-4b63-4656-94c8-ccfac3b5f37e'),(17,25,'Inhalt',1,'2014-12-31 16:13:40','2014-12-31 16:13:40','5e559754-464a-482e-973c-2d6cb41f98cd'),(20,30,'Inhalt',1,'2014-12-31 18:47:48','2014-12-31 18:47:48','d27a19be-7981-44fc-94b6-5d5e780e968f'),(21,31,'Inhalt',1,'2014-12-31 18:49:00','2014-12-31 18:49:00','932dae62-aa9c-403e-9338-18c27caf40aa'),(24,35,'Inhalt',1,'2015-01-01 10:49:22','2015-01-01 10:49:22','51a4b0ca-4b7a-4dfa-b905-034900c08e68'),(25,36,'Person',1,'2015-01-01 10:49:47','2015-01-01 10:49:47','64077e3e-cd3d-4a14-bf2d-ccfa1e50a19e');
 /*!40000 ALTER TABLE `craft_fieldlayouttabs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -826,7 +826,7 @@ CREATE TABLE `craft_fields` (
   KEY `craft_fields_context_idx` (`context`),
   KEY `craft_fields_groupId_fk` (`groupId`),
   CONSTRAINT `craft_fields_groupId_fk` FOREIGN KEY (`groupId`) REFERENCES `craft_fieldgroups` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1230,7 +1230,7 @@ CREATE TABLE `craft_sections` (
   UNIQUE KEY `craft_sections_handle_unq_idx` (`handle`),
   KEY `craft_sections_structureId_fk` (`structureId`),
   CONSTRAINT `craft_sections_structureId_fk` FOREIGN KEY (`structureId`) REFERENCES `craft_structures` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1239,7 +1239,7 @@ CREATE TABLE `craft_sections` (
 
 LOCK TABLES `craft_sections` WRITE;
 /*!40000 ALTER TABLE `craft_sections` DISABLE KEYS */;
-INSERT INTO `craft_sections` VALUES (1,NULL,'Homepage','homepage','single',1,'index',1,'2014-12-31 14:08:16','2014-12-31 16:12:31','9c8b62ae-d652-4363-b933-a6d65c30eeed'),(3,NULL,'Unternehmen','unternehmen','single',1,'index',1,'2014-12-31 16:11:41','2014-12-31 16:12:46','2c726bb6-5f8e-441a-a984-f1e921896ad6'),(4,NULL,'Dienstleistungen','dienstleistungen','channel',0,NULL,1,'2014-12-31 18:24:16','2014-12-31 18:24:16','aa44f906-1ce8-4226-885f-d98b35617ef1'),(5,NULL,'Produkte','produkte','channel',0,NULL,0,'2014-12-31 18:47:18','2014-12-31 18:47:18','67f1719e-5c3e-41e4-865a-3def1fcd1422');
+INSERT INTO `craft_sections` VALUES (1,NULL,'Homepage','homepage','single',1,'index',1,'2014-12-31 14:08:16','2014-12-31 16:12:31','9c8b62ae-d652-4363-b933-a6d65c30eeed'),(3,NULL,'Unternehmen','unternehmen','single',1,'index',1,'2014-12-31 16:11:41','2015-01-01 10:44:01','2c726bb6-5f8e-441a-a984-f1e921896ad6'),(4,NULL,'Dienstleistungen','dienstleistungen','channel',0,NULL,1,'2014-12-31 18:24:16','2014-12-31 18:24:16','aa44f906-1ce8-4226-885f-d98b35617ef1'),(5,NULL,'Produkte','produkte','channel',0,NULL,0,'2014-12-31 18:47:18','2014-12-31 18:47:18','67f1719e-5c3e-41e4-865a-3def1fcd1422'),(6,NULL,'Kontakt','kontakt','channel',0,NULL,1,'2015-01-01 10:43:45','2015-01-01 10:43:45','176ee9d5-6157-48e5-8153-f6ee394dc3bd');
 /*!40000 ALTER TABLE `craft_sections` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1265,7 +1265,7 @@ CREATE TABLE `craft_sections_i18n` (
   KEY `craft_sections_i18n_locale_fk` (`locale`),
   CONSTRAINT `craft_sections_i18n_locale_fk` FOREIGN KEY (`locale`) REFERENCES `craft_locales` (`locale`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `craft_sections_i18n_sectionId_fk` FOREIGN KEY (`sectionId`) REFERENCES `craft_sections` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1274,7 +1274,7 @@ CREATE TABLE `craft_sections_i18n` (
 
 LOCK TABLES `craft_sections_i18n` WRITE;
 /*!40000 ALTER TABLE `craft_sections_i18n` DISABLE KEYS */;
-INSERT INTO `craft_sections_i18n` VALUES (1,1,'de',0,'__home__',NULL,'2014-12-31 14:08:16','2014-12-31 15:26:10','c096b67f-dcf8-4f6e-b08f-53d997e56baf'),(3,3,'de',0,'unternehmen',NULL,'2014-12-31 16:11:41','2014-12-31 16:11:41','ac8e2ba5-bb57-465c-904f-206f78d258e2'),(4,4,'de',0,NULL,NULL,'2014-12-31 18:24:16','2014-12-31 18:24:16','2f15a93d-870e-4a86-b3b1-289978b155ed'),(5,5,'de',0,NULL,NULL,'2014-12-31 18:47:18','2014-12-31 18:47:18','1dd1b2d0-7205-4876-81f3-e832bb9a867c');
+INSERT INTO `craft_sections_i18n` VALUES (1,1,'de',0,'__home__',NULL,'2014-12-31 14:08:16','2014-12-31 15:26:10','c096b67f-dcf8-4f6e-b08f-53d997e56baf'),(3,3,'de',0,'unternehmen',NULL,'2014-12-31 16:11:41','2014-12-31 16:11:41','ac8e2ba5-bb57-465c-904f-206f78d258e2'),(4,4,'de',0,NULL,NULL,'2014-12-31 18:24:16','2014-12-31 18:24:16','2f15a93d-870e-4a86-b3b1-289978b155ed'),(5,5,'de',0,NULL,NULL,'2014-12-31 18:47:18','2014-12-31 18:47:18','1dd1b2d0-7205-4876-81f3-e832bb9a867c'),(6,6,'de',0,NULL,NULL,'2015-01-01 10:43:45','2015-01-01 10:43:45','bfd085cf-e52a-4f6f-be63-a710ddd4ed5c');
 /*!40000 ALTER TABLE `craft_sections_i18n` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1524,7 +1524,7 @@ CREATE TABLE `craft_tasks` (
   KEY `craft_tasks_lft_idx` (`lft`),
   KEY `craft_tasks_rgt_idx` (`rgt`),
   KEY `craft_tasks_level_idx` (`level`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1899,4 +1899,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-01 10:41:06
+-- Dump completed on 2015-01-01 10:57:02
