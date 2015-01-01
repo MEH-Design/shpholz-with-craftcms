@@ -1,0 +1,12 @@
+{% extends "_layout" %}
+
+{% block content %}
+<section class="main-section">
+  <article class="impressum">
+    <h1>{{ entry.title }}</h1>
+    <p><img src="{{ url.textonly }}/images/mail_drawn.svg" class="icon"/>{{ entry.email }}</p>
+    <p><img src="{{ url.textonly }}/images/phone_drawn.svg" class="icon"/>{{ entry.tel }}</p>
+    <p><img src="{{ url.textonly }}/images/address_drawn.svg" class="icon"/>{{ entry.streetaddress }}, {{ entry.postalcode }} {{ entry.locality }}</p>  
+  </article>
+</section>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "_layout" %}
+
+{% block bodyclass %}
+contact
+{% endblock %}
+
+
+{% block content %}
+{% for entry in craft.entries.section('kontakt').find() %}
+{% if entry.type.name == 'Land' %}
+  <section class="main-section">
+    <article>
+      <h1>{{ entry.title }}</h1>
+      {% for asset in entry.image %}
+      <img class="no-clip" src="{{ asset.url }}" alt="" />
+      {% endfor %}
+      <div class="profile">
+        {% for contact in craft.entries.section('kontakt').find() %}
+          {% if contact.type.name == 'Kontakt' %}
+            {% if contact.countryname == entry.countryname %}
+              <div>
+                {% for contactasset in contact.image %}
+                  <img class="profile-image" src="{{ contactasset.getUrl('contact') }}" alt="{{ contact.fn }}" />
+                {% endfor %}
+                <div class="profile-info">
+                  <p>{{ contact.fn }}</p>
+                  {{ contact.body }}
+                </div>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        <div class="selected">
+          <div class="profile-info">
+            <p>Klicken sie auf ein Bild um weitere Information anzuzeigen.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+{% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block endscript %}
+<script src="{{ url.textonly }}/javascript/regions/contact.js"></script>
+{% endblock %}
