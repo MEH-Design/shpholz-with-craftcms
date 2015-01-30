@@ -18,7 +18,7 @@ small
 {% endblock %}
 
 {% block content %}
-{% for entry in craft.entries.section('dienstleistungen').order('order').find() %}
+{% for entry in craft.entries.section('produkte').find() %}
 <div class="wrapper small" id="{{ entry.slug }}">
 <section class="main-section">
   <article>
@@ -34,9 +34,9 @@ small
 {% endblock %}
 
 {% block sidebar %}
-<aside class="sided">
+<aside  class="sided">
   <div class="container">
-    {% for entry in craft.entries.section('dienstleistungen').order('order').find() %}
+    {% for entry in craft.entries.section('produkte').find() %}
     <a href="#{{ entry.slug }}">
       <div>
       {% for asset in entry.image %}
