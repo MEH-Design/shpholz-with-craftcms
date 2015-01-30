@@ -6,7 +6,7 @@ contact
 
 
 {% block content %}
-{% for entry in craft.entries.section('kontakt').find() %}
+{% for entry in craft.entries.section('kontakt').order('order').find() %}
 {% if entry.type.name == 'Land' %}
   <section class="main-section">
     <article>
@@ -15,7 +15,7 @@ contact
       <img class="no-clip" src="{{ asset.url }}" alt="" />
       {% endfor %}
       <div class="profile">
-        {% for contact in craft.entries.section('kontakt').find() %}
+        {% for contact in craft.entries.section('kontakt').order('order').find() %}
           {% if contact.type.name == 'Kontakt' %}
             {% if contact.countryname == entry.countryname %}
               <div>
