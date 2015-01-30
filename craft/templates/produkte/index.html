@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block bodyclass %}
-use-wrapper has-sidebar
+use-wrapper
 {% endblock %}
 
 {% block headerclass %}
@@ -34,7 +34,7 @@ small
 {% endblock %}
 
 {% block sidebar %}
-<aside>
+<aside  class="sided">
   <div class="container">
     {% for entry in craft.entries.section('produkte').find() %}
     <a href="#{{ entry.slug }}">
